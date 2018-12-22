@@ -1,0 +1,14 @@
+{
+    "name": "loja-virtual",
+    "version": "1.0.0",
+    "description": "Desafio loja virtual",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node index.js localhost"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.3"
+    }
+}

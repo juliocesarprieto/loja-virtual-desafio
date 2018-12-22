@@ -1,0 +1,218 @@
+body {
+  margin: 0px;
+  border: 0px;
+  background: url(../img/grid.png),
+             linear-gradient(to right, rgba(0, 126, 174, .85), rgba(26, 193, 187, .85));
+  background-repeat: repeat;
+  ;
+}
+.menu-bar {
+  overflow: hidden;
+  background: rgb(38, 50, 56, 0.75);
+  box-shadow: 12px 15px 20px rgba(0,0,0,.16);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;    
+}
+.menu {
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  margin: 0 auto;
+}
+.menu li {
+  position: relative;
+  float: left; 
+  padding-right: 5px;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 10px;
+  display: block;    
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+.menu li a:hover {
+  background: rgb(38, 50, 56, 0.45);
+  color: #fff;
+  font-size: 1.0em;
+  padding: 15px 10px;
+  border-radius: 3px;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background: #fff;
+  display: none;
+}
+
+.menu li:hover ul, .menu li.over ul {
+  display: block;
+}
+.menu li ul li {
+  border: 1px solid #c0c0c0;
+  display: block;
+  width: 150px;
+}
+/*TABLE*/
+.table{
+  width: 70%;
+  margin: 0% auto;  
+  border-collapse: collapse;
+  background: white;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #C1C3D1;  
+}
+.table thead{
+  background: #eee;
+}
+.table thead th{
+  padding: 10px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #23262d;
+  color: #eee;
+  font-size: 16px;
+  font-family: Arial, Tahoma;
+  text-align: left;
+  border-bottom: 4px solid #C1C3D1;
+  border-right: 1px solid #343a45;
+}
+.table thead th:last-child{
+  border-right: none;
+}
+.table tbody tr td{
+  position: relative;
+  padding: 20px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: white;
+  color: #414141;
+  font-size: 16px;
+  font-family: Arial, Tahoma;
+  font-weight: 100;
+  border: 1px solid #C1C3D1;
+}
+.table-editable thead th:last-child{
+  padding: 20px 15px;
+}
+.table-editable tbody tr td:last-child{
+  padding: 20px 15px;
+}
+/*FORM*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.card-form {
+  width: 500px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  margin: 10% auto;
+}
+.form-title {
+  width: 100%;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  height : 80px;
+  font-size : 20px;
+  font-weight : bold;
+  background : rgba(0, 126, 174, .85);
+  border-radius: 10px 10px 0 0;  
+ }
+ .form-title .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.form-title .close:hover,
+.form-title .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form-body{
+  padding: 10px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+input[type="text"]{
+  appearance: none;
+  width: 100%;
+  margin: 0 15px;
+  height: 35px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #e8ebed;
+  color: #576366;
+  font-size: 14px;
+}
+.rule{
+  height: 2px;
+  background: #e8ebed;
+  margin: 0px 35px;
+}
+.form-footer{
+  margin: 0 25px 15px 25px;
+  padding: 15px 10px;
+}
+button{
+  display : inline-block;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #27ae60;
+  margin-right: 10px;
+  margin-left: 45px;
+  font-size: 14px;
+  color: white;
+}    
+span{
+  margin-left: 8px;
+}
+.myBtn {
+  margin-top: 60px;
+}
+
+.btn-delete {
+  background-color: #D84315;
+}
+
+.btn-update {
+  background-color: #1976D2;
+}
+.cadastro {
+  margin: 0 auto;
+  background: transparent;
+  width: 80%;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}

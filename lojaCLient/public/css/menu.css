@@ -1,0 +1,54 @@
+.menu-bar {
+    overflow: hidden;
+    background: rgb(38, 50, 56, 0.45);
+    box-shadow: 12px 15px 20px rgba(0,0,0,.16);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+}
+.menu {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    margin: 0 auto;
+}
+.menu li {
+    position: relative;
+    float: left; 
+    padding-right: 5px;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.menu li a:hover {
+    background: rgb(38, 50, 56, 0.45);
+    color: #fff;
+    font-size: 1.0em;
+    padding: 15px 10px;
+    border-radius: 3px;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: #fff;
+    display: none;
+}
+
+.menu li:hover ul, .menu li.over ul {
+    display: block;
+}
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}

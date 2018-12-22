@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loja Virtual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+    <link rel="stylesheet" href="css/caixa.css"/>
+    <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="js/main.js"></script>  
+  </head>
+<body onload="onloadPage()">
+   <nav class="menu-bar">
+      <ul class="menu">
+        <li><a href="#" onclick="loadHome()"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" onclick="loadProdutos()"><i class="fas fa-box-open"></i> Produtos</a></li>
+      </ul>
+    </nav>   
+    <div id="vitrine" class="div-promo">
+      <script>getVitrine();</script>   
+      <div id='box' class="box">
+        <img src="./img/notebook_dell.jpg" alt="">
+        <p id="preco"> R$ </p>
+        <div><button type="button" class="btn-add">Adicionar <span class="fas fa-shopping-cart"></span></button></div>
+      </div>
+      <div id='box' class="box">
+        <img src="./img/notebook_dell.jpg" alt="">
+        <p id="preco"> R$ gdfgdfgdfgdfgdf</p>
+        <div><button type="button" class="btn-add">Adicionar <span class="fas fa-shopping-cart"></span></button></div>
+      </div>
+      <div id='box' class="box">
+        <img src="./img/notebook_dell.jpg" alt="">
+        <p id="preco"> R$ </p>
+        <div><button type="button" class="btn-add">Adicionar <span class="fas fa-shopping-cart"></span></button></div>
+      </div>
+      <div id='box' class="box">
+        <img src="./img/notebook_dell.jpg" alt="">
+        <p id="preco"> R$ </p>
+        <div><button type="button" class="btn-add">Adicionar <span class="fas fa-shopping-cart"></span></button></div>
+      </div>
+      <div id='box' class="box">
+        <img src="./img/notebook_dell.jpg" alt="">
+        <p id="preco"> R$ </p>
+        <div><button type="button" class="btn-add">Adicionar <span class="fas fa-shopping-cart"></span></button></div>
+      </div>
+    </div>
+    <div id="produtos">
+      <div id="myModal" class="modal">
+        <div class="card-form">
+            <form id="form">
+              <div class="form-title"><p class="label-title">Cadastrar Produto</p><span class="close" onclick="closeCadastro()">&times;</span></div>
+              <div class="form-body">                
+                <div class="row">
+                   <input id="idProd" type="hidden">
+                  <input id="nomeProd" type="text" placeholder="Nome Produto*" required>
+                  <input id="precoProd" type="text" placeholder="Preço*" required>
+                </div>
+                <div class="row">
+                  <input id="descricaoProd" type="text" placeholder="Descrição*" required>
+                </div>
+                <div class="row">
+                    <label for="files" class="button-upload">
+                        Custom Upload <i class="fas fa-upload"></i>
+                    </label>
+                    <input id="files" type="file"/>                  
+                </div>
+              </div>
+              <div class="rule"></div>
+              <div class="form-footer">
+              <button type="button" onclick="sendProduto()"><i class="fas fa-save"></i> Salvar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="cadastro">
+            <button id="myBtn" class="myBtn" onclick="openCadastro()"><i class="fas fa-plus-square"></i> Adicionar</button>
+            <script>getListagemProdutos();
+              </script>      
+              <table id="tableProd" class="table">
+                  <thead>
+                    <th>Nome_Prod</th>
+                    <th>Descrição_Prod</th>
+                    <th>Preço_Prod</th>
+                    <th></th>
+                  </thead>
+                  <tbody id="tbody">
+                    <tr>            
+                    </tr>          
+                  </tbody>
+                </table>  
+        </div>
+                
+    </div>        
+</body>
+</html>
