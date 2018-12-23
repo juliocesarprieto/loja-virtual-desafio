@@ -48,17 +48,6 @@
     border-width: 0px;
     color: #fff;      
 }
-.box button:hover {
-    outline-color: #009688;
+.box button:hover {    
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
-}
-
-input[type="file"] {
-    display: none;
-}
-.button-upload {
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
 }
