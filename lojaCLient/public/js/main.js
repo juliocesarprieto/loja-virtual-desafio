@@ -41,6 +41,7 @@ function getVitrine(){
                 var newImage;
                 var div_box;
                 var div;
+                var p;
                 var btn_add;
                 var span_btn;
                 
@@ -49,27 +50,31 @@ function getVitrine(){
                 }
     
                 for(var i=0; i < myObj.length; i++){
+                     
+                    div_box = document.createElement('div');
+                    div_box.className = 'box';
+                    vitrine.appendChild(div_box);                    
+                    
+                    p = document.createElement('p');
+                    p.innerHTML = 'R$ '+ myObj[i].precoProduto;
+                    div_box.appendChild(p);
+
                     src = "data:image/jpeg;base64," + myObj[i].imageProduto;                
                     newImage = document.createElement('img');
-                    newImage.src = src;                   
-    
+                    newImage.src = src; 
+                    div_box.appendChild(newImage);                    
+
                     btn_add = document.createElement('button');
                     btn_add.type = 'Button';
                     btn_add.innerHTML = 'Adicionar ';
     
                     span_btn = document.createElement('span');
                     span_btn.className = 'fas fa-shopping-cart';
-                    btn_add.appendChild(span_btn);
+                    btn_add.appendChild(span_btn); 
                     div = document.createElement('div');
-    
                     div.appendChild(btn_add);
-       
-                    div_box = document.createElement('div');
-                    div_box.className = 'box';
-                    div_box.innerHTML = newImage.outerHTML;
-                    div_box.appendChild(div);
-       
-                    vitrine.appendChild(div_box);
+                    div_box.appendChild(div);                   
+
                     src = null;
                 }  
             }            
