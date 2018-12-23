@@ -35,26 +35,22 @@
 }
 
 .box button {
+    position: relative;
     height: 40px;
-    width: 90%;    
-    margin-top: 50%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8px;    
-    left: 0;
-    right: 0;
-    bottom: 8px;
+    bottom: -100px;
     text-align: center;
     font-family: Lato;
     font-size: 18px;
-    background: url(https://www.devmedia.com.br/view/img/grid.png),  rgba(0, 126, 174, .85);
+    background: url(../img/grid.png),  #FF6F00;
     border-width: 0px;
-    color: #fff; 
-      
+    color: #fff;      
 }
 .box button:hover {
     outline-color: #009688;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
 }
 
 input[type="file"] {
