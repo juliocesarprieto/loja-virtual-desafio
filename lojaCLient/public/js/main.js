@@ -182,8 +182,10 @@ async function getBase64(file){
 function loadHome(){
     var produtos = document.getElementById('produtos');
     var vitrine = document.getElementById('vitrine');
+    var menuCadastro = document.getElementById('mnAdd');
     if (produtos.style.display !== "none") {
         produtos.style.display = "none";
+        menuCadastro.style.display='none';
         vitrine.style.display = "block";
         getVitrine();
       }
@@ -192,16 +194,20 @@ function loadHome(){
 function loadProdutos(){
     var vitrine = document.getElementById('vitrine');
     var produtos = document.getElementById('produtos');
+    var menuCadastro = document.getElementById('mnAdd');
     if (vitrine.style.display !== "none") {
+        menuCadastro.style.display='block';
         vitrine.style.display = "none";
         produtos.style.display = "block";
       }     
 }
 
 function onloadPage(){
-    var produtos = document.getElementById('produtos');   
+    var produtos = document.getElementById('produtos'); 
+    var menuCadastro = document.getElementById('mnAdd');  
     if (produtos.style.display !== "none") {
         produtos.style.display = "none";
+        menuCadastro.style.display = "none";
     }  
 }
 
